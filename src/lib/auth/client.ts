@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000'; // Ajuste a URL conforme necessário
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'; // Ajuste a URL conforme necessário
 
 export interface SignUpParams {
   email: string;
